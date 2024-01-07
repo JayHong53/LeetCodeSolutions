@@ -1,6 +1,6 @@
 package p1535_FindWinnerOfArrayGame;
 
-import java.util.*;
+//import java.util.*;
 
 public class Solution {
 
@@ -20,14 +20,11 @@ public class Solution {
     	}
     	
     	else if (arr.length < k) {
-    		int retval = 0;
     		for (int i = 0; i < arr.length; i++) {
     			
     		}
     	}
-    	
-    	int max = Math.max(k, arr.length);
-    	int winCount = 0;
+       	int winCount = 0;
     	
     	while (winCount < k) {
     		if (isWinnerAtFront(arr)) {
@@ -68,6 +65,5 @@ public class Solution {
     	arr[0] = winner;
     	arr[arr.length - 1] = loser;
     }
-    
 
 }
